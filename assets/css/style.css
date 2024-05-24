@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* ALL */
+body{
+    margin:0;
+    padding:0;
+    font-family: "Oswald", sans-serif;
+    background-color:white;
+}
+  
+
+#logo{
+    font-size: 30px;
+    color:black;
+    margin-left: 40px;
+}
+
+footer{
+    bottom:0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: white;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+}
+
+/* ACCUEIL */
+
+#accueil{
+    width: 60%;
+    margin: auto;
+}
+
+#accueil h1{
+    text-align: center;
+    font-size: 200px;
+    margin-bottom: 250px;
+}
+
+#accueil h2{
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+#accueil p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+/* LANGAGE */
+
+#langage{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+#langage h2,h3{
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+#langage p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+
+
+.code-img img{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* CONTACT */
+
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.contact input, button, textarea{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 20px;
+    min-width: 800px;
+    max-height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    font-size:18px;
+}
+
+.contact label{
+    margin: 10px;
+}
+
+.contact button{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact button:hover{
+    background-color: #f5f5f5;
+}
+
+.contact #send:hover{
+    background-color:#f5f5f5 ;
+}
+textarea{
+    max-width: 800px;
+    min-width: 800px;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+#send{
+    width:100%
+}
+
+#contact{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.direct img{
+    width: 30px;
+}
+
+.tel, .mail{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    font-size:18px;
+}
+
+#sendOk{
+    text-align: center;
+    margin-top:20%;
+    text-transform:uppercase;
+}
+
+#sendOk h1{
+    font-size: 60px;
+}
+
+/* HTML */
+
+
+.explain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    padding: 50px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.explain p{
+    font-size: 20px;
+    width: 100%;
+}
+
+.explain .circle{
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 50%;
+    padding-left: 50px;
+    padding-right: 50px;;
+    background-color: white;
+    margin: auto;
+}
+
+.explain .circle img{
+    width: 200px;
+    height: 200px;
+    margin-top:50px;
+}
+
+
+.code{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    padding: 50px;
+    width: 70%;
+    margin-bottom: 100px;
+}
+
+.code p{
+    font-size: 20px;
+    width: 100%;
+}
+
+.code .circle img{
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-image: url(../img/bg.jpg);
+    background-position:60%;
+    background-size: 200%;
+    margin: auto;
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.all h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-top: 150px;
+}
+
+.example{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+    padding-bottom: 50px;
+}
+
+.example h2{
+    font-size: 25px;
+}
+
+.example img, video{
+    width: 80%;
+    margin:10%;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+@media (max-width: 740px) {
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .direct{
+        margin: 20px;
+    }
+
+    .explain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .code{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .explain .circle{
+            width: 300px;
+            height: 400px;
+            border: 3px solid black;
+            border-radius: 50%;
+            background-color: white;
+            margin: 10px;;
+        
+    }
+
+    .explain .circle img{
+        margin-left:50px;
+        padding-top:50px;
+    }
+
+    textarea{
+        max-width: 400px;
+        min-width: 400px;
+        max-height: 100px;
+        min-height: 100px;
+    }
+
+    .contact input, button, textarea{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-bottom: 20px;
+        min-width: 400px;
+        max-height: 100px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: white;
+        font-size:18px;
+    }
+
+    #accueil h1{
+        font-size: 50px;
+        margin-bottom:40px;
+    }
+
+    #logo{
+        margin-left: 10px;
+    }
+    
+    
+}
