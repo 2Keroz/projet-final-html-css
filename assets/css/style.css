@@ -158,8 +158,9 @@ textarea{
 
 #sendOk{
     text-align: center;
-    margin-top:20%;
+    margin-top:10%;
     text-transform:uppercase;
+    padding-bottom: 400px;
 }
 
 #sendOk h1{
