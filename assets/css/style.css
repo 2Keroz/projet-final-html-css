@@ -99,7 +99,7 @@ footer{
     margin-bottom: 70px;
 }
 
-.contact input, button, textarea{
+.contact input, .contact button, .contact textarea{
     display: flex;
     justify-content: center;
     align-items: start;
@@ -167,7 +167,76 @@ textarea{
     font-size: 60px;
 }
 
-/* HTML */
+/* CTA */
+
+.cta{
+    display: flex;
+    justify-content: center;
+    margin-bottom:30px;
+}
+
+.cta button {
+    margin: 20px;
+  }
+.cta .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  
+
+.cta .btn-16 {
+    border: none;
+    color: #000;
+  }
+.cta .btn-16:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+  }
+.cta .btn-16:hover {
+    color: #000;
+  }
+.cta .btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+.cta .btn-16:active {
+    top: 2px;
+  }
+
+.cta a{
+    text-decoration: none;
+    color:black;
+}
+
+
+/* HTML CSS JS PHP */
 
 
 .explain{
@@ -178,7 +247,20 @@ textarea{
     padding: 50px;
     width: 70%;
     margin-bottom: 10px;
+    animation: fadeInRight 1s ease-in-out;
 }
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
 
 .explain p{
     font-size: 20px;
@@ -211,7 +293,19 @@ textarea{
     padding: 50px;
     width: 70%;
     margin-bottom: 100px;
+    animation: fadeInLeft 1s ease-in-out;
 }
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
 .code p{
     font-size: 20px;
@@ -248,7 +342,7 @@ textarea{
     justify-content: center;
     flex-direction: column;
     gap:20px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .example h2{
@@ -261,6 +355,9 @@ textarea{
     border: 2px solid black;
     border-radius: 20px;
 }
+
+
+/* RESPONSIVE */
 
 @media (max-width: 740px) {
     .contact{
@@ -308,7 +405,7 @@ textarea{
         min-height: 100px;
     }
 
-    .contact input, button, textarea{
+    .contact input, .contact button, .contact textarea{
         display: flex;
         justify-content: center;
         align-items: start;

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
-    <title>CodeExplained - CSS</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <title>CodeExplained - JS</title>
 </head>
 
 <body>
@@ -19,21 +19,20 @@
             <span class='menu-button'></span>
         </label>
         <ul class="menu">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="html.html">HTML</a></li>
-            <li><a href="css.html">CSS</a></li>
-            <li><a href="js.html">Javascript</a></li>
-            <li><a href="php.html">PHP</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="./html.html">HTML</a></li>
+            <li><a href="./css.html">CSS</a></li>
+            <li><a href="./js.html">Javascript</a></li>
+            <li><a href="./php.html">PHP</a></li>
+            <li><a href="./contact.html">Contact</a></li>
         </ul>
     </header>
-
     <main>
         <section class="all">
-            <h1>Le CSS expliqué</h1>
+            <h1>Le Javascript expliqué</h1>
             <div class="explain">
                 <div class="circle">
-                        <img src="assets/img/css3.png" alt="Architecte">
+                    <img src="../assets/img/js.png" alt="Architecte">
                 </div>
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, libero reiciendis vero
@@ -96,15 +95,20 @@
                         iste? Molestiae unde obcaecati sint recusandae.</p>
                 </div>
                 <div class="circle">
-                    <img src="assets/img/css-pnj.png" alt="pnj html">
+                    <img src="../assets/img/js-pnj.png" alt="pnj html">
                 </div>
             </div>
-            <section class="example">
-                <h2>Voici des exemples de codes CSS</h2>
-                <div><img src="assets/img/css-code.jpg" alt="html exemple code"></div>
-            </section>
         </section>
-
+        <section class="example">
+            <h2>Voici des exemples de codes JS</h2>
+            <video controls autoplay>
+                <source src="../assets/img/js-code.mp4" type="video/mp4">
+            </video>
+        </section>
+        <div class="cta">
+            <button class="custom-btn btn-16" onclick="window.location='./css.html';">Précedent</button>
+            <button class="custom-btn btn-16" onclick="window.location='./php.html';">Suivant</button>
+        </div>
     </main>
     <footer>
         <p>&copy; Tous droits réservés</p>
